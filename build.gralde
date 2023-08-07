@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.5.2'
+    testImplementation 'junit:junit:4.12'
+}
+
+// 빌드 태스크 정의
+task myCustomTask {
+    doLast {
+        println 'Hello, Gradle!'
+    }
+}
