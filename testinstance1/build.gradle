@@ -22,6 +22,10 @@ dependencies {
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
+// Spring Boot의 메인 클래스 설정
+springBoot {
+    mainClass = 'com.example.MainClass' // 여기에 실제 메인 클래스의 패키지 경로와 클래스명을 입력하세요
+}
 
 tasks.named('test') {
 	useJUnitPlatform()
