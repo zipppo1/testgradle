@@ -6,7 +6,8 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
+#version = '0.0.1-SNAPSHOT'
+apply plugin: 'war'
 
 java {
     sourceCompatibility = '1.8'
@@ -28,6 +29,6 @@ springBoot {
     mainClass = 'com.example.MainClass' // 여기에 실제 메인 클래스의 패키지 경로와 클래스명을 입력하세요
 }
 
-tasks.named('test') {
+tasks.named('testinstance1') {
     useJUnitPlatform()
 }
