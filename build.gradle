@@ -25,12 +25,12 @@ dependencies {
 // Spring Boot의 메인 클래스 설정
 springBoot {
     mainClass = 'com.example.MainClass' // 여기에 실제 메인 클래스의 패키지 경로와 클래스명을 입력하세요
-    mainClassName = 'com.example.Application' // 이 부분을 확인하세요.	
 }
 
-  
-
-
-tasks.named('testinstance') {
+tasks.named('testinstance1') {
 	useJUnitPlatform()
+}
+bootWar {
+    // 여기에 mainClassName을 설정하세요
+    mainClassName = 'com.example.Application'
 }
